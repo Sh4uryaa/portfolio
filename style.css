@@ -53,6 +53,17 @@ header ul a {
     object-fit: cover;
     object-position: top;
     box-shadow: 0 0 100px rgba(255, 255, 255, 0.50);
+    animation: profileGlow 7s ease-in-out infinite;
+}
+@keyframes profileGlow {
+
+    0%,100%{
+        box-shadow:0 0 90px rgba(255,255,255,.25);
+    }
+
+    50%{
+        box-shadow:0 0 120px rgba(255,255,255,.65);
+    }
 }
 .social-links img {
     width: 40px;
