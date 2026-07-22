@@ -140,8 +140,7 @@ header.scrolled {
     border-radius: 12px;
     padding: 20px;
     width: 100%;
-    max-width: 170px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     gap: 10px;
     background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
