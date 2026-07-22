@@ -139,7 +139,9 @@ header.scrolled {
     border: 1px solid #30363d;
     border-radius: 12px;
     padding: 20px;
-    width: 160px;
+    width: 100%;
+    max-width: 170px;
+    aspect-ratio: 1/1;
     gap: 10px;
     background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
@@ -202,8 +204,8 @@ header.scrolled {
 }
 
 .skill-cards-group {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
@@ -431,9 +433,6 @@ footer {
     .skills-grid {
         justify-content: center;
     }
-    .skill-card {
-    width: 90px;
-}
     .skill-card img {
     width: 40px;
     height: 40px;
