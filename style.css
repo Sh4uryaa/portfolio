@@ -45,7 +45,35 @@ header {
     padding: 20px 8%;;
     transition: padding 0.3s ease;
 }
+.hamburger {
+    margin-left: auto;
+    display:none;
+}
+header ul.nav-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    text-align: center;
+    background-color: #090e16;
+    padding: 20px;
+    gap: 25px;
+    margin: 0;
+    }
 
+header ul.nav-open li a {
+    display: block;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+header ul.nav-open li a:hover {
+    background-color: rgba(88, 166, 255, 0.1);
+    border-color: #58a6ff;
+}
 header ul {
     list-style: none;
     display: flex;
@@ -347,6 +375,19 @@ footer {
     color: #8b949e;
     font-size: 0.8rem;
     margin: 0 -8%;
+}
+
+@media (max-width: 1096px) {
+    .hamburger {
+        color: #58a6ff;
+        font-size: 30px;
+        display: block;
+    }
+
+    header ul {
+        display: none;
+    }
+
 }
 
 @media (max-width: 968px) {
