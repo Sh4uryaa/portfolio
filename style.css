@@ -139,7 +139,7 @@ header.scrolled {
     border: 1px solid #30363d;
     border-radius: 12px;
     padding: 20px;
-    width: 100%;
+    width: 160px;
     aspect-ratio: 1 / 1;
     gap: 10px;
     background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
@@ -203,8 +203,8 @@ header.scrolled {
 }
 
 .skill-cards-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -429,14 +429,16 @@ footer {
     header ul {
         gap: 10px;
     }
-    .skills-grid {
-        justify-content: center;
-    }
+    
     .skill-card img {
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
+    #javascript img {
+        width: 80px;
+        height: 80px;
+    }
     #analytics img {
         width: 60px;
         height: 40px;
@@ -448,6 +450,18 @@ footer {
 .contact-links {
     align-items: center;
     padding: 10px;
+}
+.skill-cards-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.skill-card {
+.skill-card {
+    width: 100%;
+}
 }
 }
 
