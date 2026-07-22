@@ -5,6 +5,9 @@ body{
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #080d13 0%, #111827 100%);}
 
+* {
+    box-sizing: border-box;
+}
 h1, h2, h3{
     color:#ffffff;
 }
@@ -14,6 +17,7 @@ h2 {
 .logo-link {
     text-decoration: none;
 }
+
 .logo {
     background-color: #02418a;
     border-radius: 10%;
@@ -30,10 +34,16 @@ section {
     border-bottom: 1px solid #30363d;
 }
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 8%;;
+    transition: padding 0.3s ease;
 }
 
 header ul {
@@ -46,6 +56,11 @@ header ul a {
     color: #bbd3eb;
 }
 
+header.scrolled {
+    padding: 8px 8%; 
+    background-color: #090e16;
+    transition: padding 0.3s ease;
+}
 .profile-pic {
     width: 20vw;
     height: 20vw;
@@ -74,6 +89,7 @@ header ul a {
 }
 #hero {
     text-align: center;
+    padding-top: 150px;
 }
 
 .social-links {
@@ -95,7 +111,7 @@ header ul a {
     border: 1px solid #30363d;
     border-radius: 12px;
     padding: 20px;
-    width: 110px;
+    width: 160px;
     gap: 10px;
     background: linear-gradient(135deg, #161b22 0%, #1f2937 100%);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
@@ -325,7 +341,7 @@ html {
     color: #cdd9e5;
 }
 footer {
-    background-color: #0d1117;
+    background-color: #090e16;
     text-align: center;
     padding: 20px 8%;
     color: #8b949e;
